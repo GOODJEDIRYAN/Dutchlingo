@@ -13,3 +13,8 @@ The design is a Duolingo like Modern Design, i like it.
 <h2>This is a Prototype of the Page where you choose lessons and learn</h2>
 
 ![Courses.html Page](/Images_README/Courses-html.png)
+
+
+<h2>This is what i want the Learning screen to look like, not exactly like that but into that direction of course.</h2>
+
+![Joost Klein Duolingo](/Images/Joost-Klein-Duolingo.png)
