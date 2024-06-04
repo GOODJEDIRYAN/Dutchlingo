@@ -4,4 +4,4 @@ This is a schoolproject i have in a module in computer science.
 
 I want to share this project with you all.
 
-![image description](/Images_README/Dutchlingo-html.png)
+![Dutchlingo.html Page](/Images_README/Dutchlingo-html.png)
