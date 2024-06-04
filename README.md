@@ -1,3 +1,4 @@
+![Max Verstappen](/images/Max-Verstappen.png)
 ![Joost Klein](/images/netherlands-2024-joost-klein-2.png)
 
 <h1>This is Dutchlingo a Duolingo copy to learn Dutch.</h1>
