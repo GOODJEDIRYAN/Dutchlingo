@@ -1,11 +1,11 @@
 ![Max Verstappen](/images/Max-Verstappen.png)
 ![Joost Klein](/images/netherlands-2024-joost-klein-2.png)
 
-<h1>This is Dutchlingo a Duolingo copy to learn Dutch.</h1>
+<h1>This is Dutchlingo, a Duolingo copy to learn Dutch.</h1>
 
-This is a schoolproject i have in a module in computer science.
+Dit is een schoolproject voor informatica
 
-I want to share this project with you all.
+Ik wil dit project met jullie allemaal delen.
 
 <h2>This is the Starting page</h2>
 
