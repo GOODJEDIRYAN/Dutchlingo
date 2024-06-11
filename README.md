@@ -1,6 +1,6 @@
 <h1>This is Dutchlingo, a Duolingo copy to learn Dutch.</h1>
 
-Dit is een schoolproject voor informatica
+Dit is een schoolproject voor informatica.
 
 Ik wil dit project met jullie allemaal delen.
 
