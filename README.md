@@ -17,4 +17,4 @@ The design is a Duolingo like Modern Design, i like it.
 <br>
 <h3>This is what i want the Learning screen to look like, not exactly like that but into that direction of course.</h2>
 
-![Joost Klein Duolingo](/Images README/Joost-Klein-Duolingo.png)
+![Joost Klein Duolingo](/Images_README/Joost-Klein-Duolingo.png)
