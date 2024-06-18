@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="..//fonts.css">
     <style>
-        /* Additional styles for Duolingo-like appearance */
         body {
             font-family: 'Feather Bold';
             background-color: #f7f7f7;
@@ -74,31 +73,52 @@
         .start-button:hover {
             background-color: #ffd55f;
         }
-        .title {
-            text-align: center;
-            font-family: 'Feather Bold';
-            color: white;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #00c090;
+            position: relative;
         }
-        .back {
-            text-align: left;
-            font-family: 'Feather Bold';
+        .title, .back {
+            margin: 0;
+        }
+        .title a, .back a {
+            text-decoration: none;
+        }
+        .title button, .back button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+        }
+        .title span, .back span {
             color: white;
+            font-family: 'Feather Bold', Arial, sans-serif;
+            font-size: 48px;
+        }
+        .title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="title">
-            <a href="..//Dutchlingo.html" style="text-decoration: none;">
-                <button style="background: transparent; border: none; cursor: pointer; padding: 0; margin: 0;">
-                    <span style="color: white; text-align: center; font-family: 'Feather Bold'; font-size: 48px;">Dutchlingo</span>
+        <h1 class="back">
+            <a href="../Courses.html">
+                <button>
+                    <span>Back</span>
                 </button>
             </a>
         </h1>
-        <h1 class="back">
-            <a href="..//Courses.html" style="text-decoration: none;">
-                <button style="background: transparent; border: none; cursor: pointer; padding: 0; margin: 0;">
-                    <span style="color: white; text-align: left; font-family: 'Feather Bold'; font-size: 48px;">Back</span>
+        <h1 class="title">
+            <a href="../Dutchlingo.html">
+                <button>
+                    <span>Dutchlingo</span>
                 </button>
             </a>
         </h1>
