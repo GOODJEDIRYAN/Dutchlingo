@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dutchlingo - Basics 1</title>
+    <title>Dutchlingo - Testing Functionality</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="..//fonts.css">
     <style>
@@ -175,24 +175,26 @@
                 <button class="answer-correct">Appel</button>
                 <button class="answer-wrong">Sinaasappel</button>
                 <button class="answer-wrong">Botterham</button>
-                <script>
-                    const wrongAnswers = document.querySelectorAll('.answer-wrong');
-                    wrongAnswers.forEach(answer => {
-                        answer.addEventListener('click', () => {
-                            answer.style.backgroundColor = '#ff0000';
-                            answer.style.color = 'white'; 
-                        });
+            </div>
+            <script>
+                const wrongAnswers = document.querySelectorAll('.answer-wrong');
+                wrongAnswers.forEach(answer => {
+                    answer.addEventListener('click', () => {
+                        answer.style.backgroundColor = '#ff0000';
+                        answer.style.color = 'white'; 
                     });
-                </script>
-                <script>
-                    const correctAnswers = document.querySelectorAll('.answer-correct');
-                    correctAnswers.forEach(answer => {
-                        answer.addEventListener('click', () => {
-                            answer.style.backgroundColor = '#43c000';
-                            answer.style.color = 'white';
-                        });
+                });
+
+                const correctAnswers = document.querySelectorAll('.answer-correct');
+                correctAnswers.forEach(answer => {
+                    answer.addEventListener('click', () => {
+                        answer.style.backgroundColor = '#43c000';
+                        answer.style.color = 'white';
+                        const nextButton = document.querySelector('.nav-button:last-child');
+                        nextButton.disabled = false;
                     });
-                </script>
+                });
+            </script>
             </div>
         </div>
 
