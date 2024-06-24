@@ -1,0 +1,197 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can create a CSS file to style your page -->
+    <link rel="stylesheet" type="text/css" href="fonts.css"> <!-- Add this line to include the fonts.css file -->
+    <style>
+        /* Additional styles for Duolingo-like appearance */
+        body {
+            font-family: 'Feather Bold';
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2%;
+            background-color: #43c000;
+            position: relative;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
+        .cta-button {
+            background-color: #ffce00;
+            color: #000;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ffd55f;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .feature {
+            background-color: #fff;
+            padding: 30px;
+            margin: 0 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            max-width: 300px;
+        }
+        .feature h3 {
+            color: #43c000;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #43c000;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(25, 1fr);
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .title, .back {
+            margin: 0;
+        }
+        .title a, .back a {
+            text-decoration: none;
+        }
+        .title button, .back button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+        }
+        .title span, .back span {
+            color: white;
+            font-family: 'Feather Bold', Arial, sans-serif;
+            font-size: 48px;
+        }
+        .title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .back {
+            position: absolute;
+            left: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 42px;
+            font-family: 'Feather Bold', Arial, sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="back">
+            <a href="Home.html">
+                <button>
+                    <span>Back</span>
+                </button>
+            </a>
+        </h1>
+        <h1 class="title">
+            <span>Dutchlingo</span>
+        </h1>
+    </header>
+    <main>
+        <br>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Perform login validation here
+        window.location.href = 'Dutchlingo.html';
+    });
+</script>
+    </main>
+</body>
+</html>
