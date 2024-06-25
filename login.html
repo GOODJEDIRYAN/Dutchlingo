@@ -188,8 +188,11 @@
 <script>
     document.querySelector('form').addEventListener('submit', function(event) {
         event.preventDefault();
-        // Perform login validation here
-        window.location.href = 'Dutchlingo.html';
+        if (document.getElementById('username').value === 'sysadmin' && document.getElementById('password').value === 'test') {
+            window.location.href = 'Dutchlingo.html';
+        } else {
+            location.reload();
+        }
     });
 </script>
     </main>
