@@ -1,11 +1,12 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dutchlingo - Courses</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <title>login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can create a CSS file to style your page -->
+    <link rel="stylesheet" type="text/css" href="fonts.css"> <!-- Add this line to include the fonts.css file -->
     <style>
         /* Additional styles for Duolingo-like appearance */
         body {
@@ -15,10 +16,12 @@
             padding: 0;
         }
         header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2%;
             background-color: #43c000;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+            position: relative;
         }
         nav ul {
             list-style-type: none;
@@ -35,67 +38,183 @@
             font-weight: bold;
             font-size: 18px;
         }
-        .course-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-            padding: 40px;
-        }
-        .course-tile {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
+        .hero {
             text-align: center;
-            cursor: pointer;
+            padding: 80px 0;
         }
-        .course-tile:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .course-tile img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .course-tile h2 {
-            margin-top: 0;
-        }
-        .start-button {
+        .cta-button {
             background-color: #ffce00;
             color: #000;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
             transition: background-color 0.3s ease;
         }
-        .start-button:hover {
+        .cta-button:hover {
             background-color: #ffd55f;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .feature {
+            background-color: #fff;
+            padding: 30px;
+            margin: 0 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            max-width: 300px;
+        }
+        .feature h3 {
+            color: #43c000;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #43c000;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(25, 1fr);
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .title, .back {
+            margin: 0;
+        }
+        .title a, .back a {
+            text-decoration: none;
+        }
+        .title button, .back button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+        }
+        .title span, .back span {
+            color: white;
+            font-family: 'Feather Bold', Arial, sans-serif;
+            font-size: 48px;
+        }
+        .title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .back {
+            position: absolute;
+            left: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 42px;
+            font-family: 'Feather Bold', Arial, sans-serif;
+            color: black;
+        }
+
+        .login a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .login a button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            font-size: 14px; /* Adjust the font size to make it smaller */
+        }
+
+        .login a span {
+            color: black;
+            font-family: 'Feather Bold', Arial, sans-serif;
+            font-size: 14px; /* Adjust the font size to make it smaller */
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
+        <h1 class="back">
+            <a href="Home.html">
+                <button>
+                    <span>Back</span>
+                </button>
+            </a>
+        </h1>
         <h1 class="title">
-            <span style="color: white; text-align: center; font-family: 'Feather Bold'; font-size: 48px;">Dutchlingo</span>
+            <span>Dutchlingo</span>
         </h1>
     </header>
     <main>
-    </br>
-        <section class="course-grid">
-            <!-- course tile template -->
-            <article class="course-tile" data-course-id="1">
-                <h2>Sign up</h2>
-                <p>Sign up here</p>
-                <button class="start-button" onclick="location.href='sign_up.html'">Sign up</button>
-            </article>
-            <article class="course-tile" data-course-id="2">
-                <h2>Login</h2>
-                <p>Already have an account</p>
-                <button class="start-button" onclick="location.href='login.html'">Log in</button>
-            </article>
-        </section>
+        <br>
+            <h2 class="subtitle">Sign up</h2>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign up</button>
+            </div>
+        </form>
+        <h1 class="login">
+            <a href="login.html">
+                <button>
+                    <span>Already have an Account?</span>
+                </button>
+            </a>
+        </h1>
+    </div>
+</body>
+    </main>
 </body>
 </html>
