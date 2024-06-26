@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -12,25 +13,30 @@ header {
     background-color: #43c000;
     position: relative;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin-right: 20px;
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
 }
+
 .hero {
     text-align: center;
     padding: 80px 0;
 }
+
 .cta-button {
     background-color: #ffce00;
     color: #000;
@@ -41,14 +47,17 @@ nav ul li a {
     font-size: 18px;
     transition: background-color 0.3s ease;
 }
+
 .cta-button:hover {
     background-color: #ffd55f;
 }
+
 .features {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
+
 .feature {
     background-color: #fff;
     padding: 30px;
@@ -59,10 +68,12 @@ nav ul li a {
     flex: 1;
     max-width: 300px;
 }
+
 .feature h3 {
     color: #43c000;
     margin-bottom: 15px;
 }
+
 footer {
     background-color: #43c000;
     color: #fff;
@@ -72,23 +83,30 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 .course-grid {
     display: grid;
-    grid-template-columns: repeat(25, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 40px;
 }
+
 .form-group {
     margin-bottom: 10px;
 }
+
 .form-group label {
     display: block;
     font-weight: bold;
 }
+
 .form-group input {
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+
 .form-group button {
     width: 100%;
     padding: 8px;
@@ -99,6 +117,7 @@ footer {
     cursor: pointer;
     font-family: 'Feather Bold', Arial, sans-serif;
 }
+
 .container {
     width: 300px;
     margin: 0 auto;
@@ -106,12 +125,15 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .title, .back {
     margin: 0;
 }
+
 .title a, .back a {
     text-decoration: none;
 }
+
 .title button, .back button {
     background: transparent;
     border: none;
@@ -119,20 +141,24 @@ footer {
     padding: 0;
     margin: 0;
 }
+
 .title span, .back span {
     color: white;
     font-family: 'Feather Bold', Arial, sans-serif;
     font-size: 48px;
 }
+
 .title {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .back {
     position: absolute;
     left: 20px;
 }
+
 .subtitle {
     text-align: center;
     font-size: 42px;
@@ -152,15 +178,16 @@ footer {
     cursor: pointer;
     padding: 0;
     margin: 0;
-    font-size: 14px; /* Adjust the font size to make it smaller */
+    font-size: 14px;
 }
 
 .login a span {
     color: black;
     font-family: 'Feather Bold', Arial, sans-serif;
-    font-size: 14px; /* Adjust the font size to make it smaller */
+    font-size: 14px;
     text-align: center;
 }
+
 .progress-bar {
     width: 80%;
     height: 20px;
@@ -169,15 +196,15 @@ footer {
     margin: 20px auto;
     overflow: hidden;
 }
+
 .progress {
     height: 100%;
-    width: 25%; /* Adjust this width to represent progress */
+    width: 25%;
     background-color: #60b6e7;
-    /* background-color: #60e764; */ /* Cant decide what color so i have one as commented */
     background-image: linear-gradient(90deg, #60e764, #60b6e7, #c09afd);
-    /* i dont know what kind of progress bar would look good. */
     border-radius: 10px;
 }
+
 .question-area {
     width: 80%;
     background-color: white;
@@ -187,16 +214,19 @@ footer {
     text-align: center;
     margin: 20px auto;
 }
+
 .question {
     font-size: 26px;
     margin-bottom: 20px;
 }
+
 .answers {
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
-.answer-wrong {
+
+.answer-wrong, .answer-correct {
     background-color: #e6e6e6;
     border: none;
     padding: 15px;
@@ -207,49 +237,11 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.answer-correct {
-    background-color: #e6e6e6;
-    border: none;
-    padding: 15px;
-    margin: 5px 0;
-    font-size: 24px;
-    font-family: 'Feather Bold', Arial, sans-serif;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.answer-correct:hover {
+
+.answer-correct:hover, .answer-wrong:hover {
     background-color: #d4d4d4;
 }
-.answer-wrong:hover {
-    background-color: #d4d4d4;
-}
-footer {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 20px auto;
-}
-.nav-button {
-    background-color: #43c000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-family: 'Feather Bold', Arial, sans-serif;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.nav-button:hover {
-    background-color: #00a57f;
-}
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 40px;
-}
+
 .course-tile {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -258,18 +250,22 @@ footer {
     text-align: center;
     cursor: pointer;
 }
+
 .course-tile:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .course-tile img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
+
 .course-tile h2 {
     margin-top: 0;
 }
+
 .start-button {
     background-color: #ffce00;
     color: #000;
@@ -280,133 +276,18 @@ footer {
     font-size: 18px;
     transition: background-color 0.3s ease;
 }
+
 .start-button:hover {
     background-color: #ffd55f;
 }
+
 .contents {
     text-align: center;
     font-size: 32px;
     font-family: 'Feather Bold', Arial, sans-serif;
     color: black;
 }
-body {
-    font-family: 'Feather Bold';
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-    background-color: #43c000;
-    position: relative;
-}
-.title, .back {
-    margin: 0;
-}
-.title a, .back a {
-    text-decoration: none;
-}
-.title button, .back button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-}
-.title span, .back span {
-    color: white;
-    font-family: 'Feather Bold', Arial, sans-serif;
-    font-size: 48px;
-}
-.title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.subtitle {
-    text-align: center;
-    font-size: 42px;
-    font-family: 'Feather Bold', Arial, sans-serif;
-    color: black;
-}
-.contents {
-    text-align: center;
-    font-size: 32px;
-    font-family: 'Feather Bold', Arial, sans-serif;
-    color: black;
-}
-.progress-bar {
-    width: 80%;
-    height: 20px;
-    background-color: #d3d3d3;
-    border-radius: 10px;
-    margin: 20px auto;
-    overflow: hidden;
-}
-.progress {
-    height: 100%;
-    width: 25%; /* Adjust this width to represent progress */
-    background-color: #60b6e7;
-    /* background-color: #60e764; */ /* Cant decide what color so i have one as commented */
-    background-image: linear-gradient(90deg, #60e764, #60b6e7, #c09afd);
-    /* i dont know what kind of progress bar would look good. */
-    border-radius: 10px;
-}
-.question-area {
-    width: 80%;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
-    margin: 20px auto;
-}
-.question {
-    font-size: 26px;
-    margin-bottom: 20px;
-}
-.answers {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-.answer-wrong {
-    background-color: #e6e6e6;
-    border: none;
-    padding: 15px;
-    margin: 5px 0;
-    font-size: 24px;
-    font-family: 'Feather Bold', Arial, sans-serif;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.answer-correct {
-    background-color: #e6e6e6;
-    border: none;
-    padding: 15px;
-    margin: 5px 0;
-    font-size: 24px;
-    font-family: 'Feather Bold', Arial, sans-serif;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.answer-correct:hover {
-    background-color: #d4d4d4;
-}
-.answer-wrong:hover {
-    background-color: #d4d4d4;
-}
-footer {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 20px auto;
-}
+
 .nav-button {
     background-color: #43c000;
     color: white;
@@ -418,6 +299,7 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .nav-button:hover {
     background-color: #00a57f;
 }
