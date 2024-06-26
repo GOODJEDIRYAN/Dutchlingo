@@ -6,75 +6,6 @@
     <title>Dutchlingo - Courses</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="fonts.css">
-    <style>
-        /* Additional styles for Duolingo-like appearance */
-        body {
-            font-family: 'Feather Bold';
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #43c000;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        .course-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-            padding: 40px;
-        }
-        .course-tile {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            cursor: pointer;
-        }
-        .course-tile:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .course-tile img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .course-tile h2 {
-            margin-top: 0;
-        }
-        .start-button {
-            background-color: #ffce00;
-            color: #000;
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
-        .start-button:hover {
-            background-color: #ffd55f;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -91,7 +22,6 @@
         <h2 style="text-align: center;">Beginner Level</h2>
         <p style="text-align: center;">Hello Learner, this is the first stage of you learning journey.</p>
         <section class="course-grid">
-            <!-- course tile template -->
             <article class="course-tile" data-course-id="1">
                 <h2>Basics 1</h2>
                 <p>Learn the basics of Dutch</p>
@@ -107,7 +37,6 @@
                 <p>Learn Dutch vocabulary for animals</p>
                 <button class="start-button" onclick="location.href='Courses/Course_3.html'">Start Lesson</button>
             </article>
-            <!-- add more course tiles here -->
         </section>
         <h2 style="text-align: center;">Intermediate Level</h2>
         <p style="text-align: center;">Congratulations on completing the first stage! Now, let's take your Dutch skills to the next level.</p>
